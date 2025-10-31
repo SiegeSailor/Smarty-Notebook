@@ -1,11 +1,11 @@
 # Smarty Notebook
 
-This repository contains Jupyter Notebooks that use the Smarty API for various common tasks. Each notebook is designed to be self-contained and easy to use.
+This repository contains Jupyter Notebooks that use the [Smarty Cloud API](https://www.smarty.com/docs/cloud) for various common tasks. Each notebook is designed to be self-contained and easy to use.
 
 - [x] [Fetch U.S. ZIP+4 Code by Address](https://github.dev/SiegeSailor/Smarty-Notebook/notebooks/fetch-us-zip4-by-address.ipynb)
 - [ ] Fetch International Postal Code by Address
 
-## Setting Up Local Environment
+## Setting Up a Local Environment
 
 Follow the steps below to set up your local environment for development. You can skip this section if you have other means of managing Python environments, such as GitHub Codespaces or Google Colab.
 
@@ -16,7 +16,7 @@ Follow the steps below to set up your local environment for development. You can
 
 ### Setting Up a Virtual Environment
 
-To create a virtual environment for the project, you can use `pyenv` and `pyenv-virtualenv`. Follow these steps:
+Create a virtual environment for the project:
 
 ```bash
 pyenv install 3.11.13
@@ -34,3 +34,16 @@ To install the required dependencies, run the following command:
 ```bash
 pip install --requirement ./requirements.txt
 ```
+
+### Supplying Smarty API Credentials
+
+To use the Smarty API, you need to provide your [key pairs](https://www.smarty.com/docs/cloud/authentication#keypairs). You can do this by creating a `.env` file with the following environment variables:
+
+```shell
+SMARTY_AUTH_ID="<smarty_auth_id>"
+SMARTY_AUTH_TOKEN="<smarty_auth_token>"
+```
+
+> [!Note]
+> You can obtain a free Smarty account and generate key pairs at [Smarty Sign Up](https://www.smarty.com/signup). You will see **API Keys** under your account dashboard. See the screenshot for _Smarty - Account - Dashboard - API Keys - Secret Keys_:
+> ![Smarty - Account - Dashboard - API Keys - Secret Keys](./images/smarty-account-dashboard-api_keys-secret_keys.png)
