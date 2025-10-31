@@ -2,7 +2,7 @@
 
 This repository contains Jupyter Notebooks that use the [Smarty Cloud API](https://www.smarty.com/docs/cloud) for various common tasks. Each notebook is designed to be self-contained and easy to use.
 
-- [x] [Fetch U.S. ZIP+4 Code by Address](https://github.dev/SiegeSailor/Smarty-Notebook/notebooks/fetch-us-zip4-by-address.ipynb)
+- [x] [Fetch U.S. ZIP+4 Code by Address](https://github.com/SiegeSailor/Smarty-Notebook/blob/fab3673e8b691af6e399cb2a2e25322739c8ae9f/notebooks/fetch-us-zip4-by-address.ipynb)
 - [ ] Fetch International Postal Code by Address
 
 ## Setting Up a Local Environment
