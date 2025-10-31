@@ -7,11 +7,11 @@ This repository contains Jupyter Notebooks that use the [Smarty Cloud API](https
 
 ## Using the Notebooks
 
-You can access the notebooks directly on [GitHub.dev](https://github.dev/SiegeSailor/Smarty-Notebook). You can also clone this project to your local machine and follow the [Setting Up a Local Environment](#setting-up-a-local-environment) section below to run the notebooks locally.
+You can access the notebooks directly on [GitHub.dev](https://github.dev/SiegeSailor/Smarty-Notebook), or other means of accessing Jupyter Notebooks, such as such as [GitHub Codespaces](https://github.blog/changelog/2022-11-09-using-codespaces-with-jupyterlab-public-beta/) or [Google Colab](https://colab.google/). You can also clone this project to your local machine and follow the [Setting Up a Local Environment](#setting-up-a-local-environment) section below to run the notebooks locally.
 
 ### Setting Up a Local Environment
 
-Follow the steps below to set up your local environment for development. You can skip this section if you have other means of managing Python environments, such as [GitHub Codespaces](https://github.blog/changelog/2022-11-09-using-codespaces-with-jupyterlab-public-beta/) or [Google Colab](https://colab.google/).
+Follow the steps below to set up your local environment for development.
 
 #### Prerequisites
 
