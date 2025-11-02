@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.0.0-release.4 (2025-11-02)
+
+### Bug Fixes
+
+- Update assets path in releaserc.toml to exclude wildcard
+  ([`bda813c`](https://github.com/SiegeSailor/Smarty-Notebook/commit/bda813c507c62a7f359ea26bd352f5dd6235574d))
+
+
 ## v1.0.0-release.3 (2025-11-02)
 
 ### Bug Fixes
