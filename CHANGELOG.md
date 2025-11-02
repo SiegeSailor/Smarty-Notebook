@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.0.0-prerelease.2 (2025-11-02)
+
+### Bug Fixes
+
+- Remove notebooks.zip from .gitignore
+  ([`a835d81`](https://github.com/SiegeSailor/Smarty-Notebook/commit/a835d81906bd9ce0a41c7a901d9be54800323d53))
+
+
 ## v1.0.0-prerelease.1 (2025-11-02)
 
 ### Bug Fixes
