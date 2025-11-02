@@ -2,6 +2,25 @@
 
 <!-- version list -->
 
+## v1.0.0-prerelease.1 (2025-11-02)
+
+### Bug Fixes
+
+- Simplify paths-ignore configuration in continuous-delivery.yml
+  ([`f2589f0`](https://github.com/SiegeSailor/Smarty-Notebook/commit/f2589f0538969424c72dec1fb4c5401952cc63aa))
+
+- Update paths-ignore for pull_request trigger in continuous-delivery.yml
+  ([`94ae601`](https://github.com/SiegeSailor/Smarty-Notebook/commit/94ae601720f1bfe35081312eb39014346fa54aa9))
+
+- Update prerelease_token to 'prerelease' in releaserc.toml
+  ([`4ac188e`](https://github.com/SiegeSailor/Smarty-Notebook/commit/4ac188ecc5ce152856e738e253811be1b1a35196))
+
+### Documentation
+
+- Add contributing guide to the repository
+  ([`fa8a20d`](https://github.com/SiegeSailor/Smarty-Notebook/commit/fa8a20df5e44abdce217e802c638d264cb515ac1))
+
+
 ## v1.0.0-release.5 (2025-11-02)
 
 ### Features
