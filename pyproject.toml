@@ -1,0 +1,4 @@
+[project]
+name = "smarty-notebook"
+version = "0.0.0"
+description = "A Jupyter notebook collection for executing Smarty requests. The notebook provides easy-to-use cells and batch configurations."
