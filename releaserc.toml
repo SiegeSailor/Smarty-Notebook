@@ -8,7 +8,7 @@ commit_parser = "conventional"
 logging_use_named_masks = false
 major_on_zero = true
 no_git_verify = false
-repo_dir = "/Users/user/Documents/Smarty-Notebook"
+# repo_dir = "/Users/user/Documents/Smarty-Notebook"
 tag_format = "{version}"
 version_toml = ["pyproject.toml:project.version"]
 
