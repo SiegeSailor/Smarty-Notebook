@@ -2,6 +2,17 @@
 
 <!-- version list -->
 
+## v1.0.0-release.3 (2025-11-02)
+
+### Bug Fixes
+
+- Update artifact name for distribution upload step
+  ([`6668943`](https://github.com/SiegeSailor/Smarty-Notebook/commit/66689437523cd4ff1e264d2e6a37e242c5fccdd3))
+
+- Update assets in releaserc.toml for semantic release
+  ([`ef8fba0`](https://github.com/SiegeSailor/Smarty-Notebook/commit/ef8fba0bd0688730624c231e73255575ade6100f))
+
+
 ## v1.0.0-release.2 (2025-11-02)
 
 ### Bug Fixes
