@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.0.0-release.5 (2025-11-02)
+
+### Features
+
+- Add notebooks.zip to the release assets list
+  ([`792d948`](https://github.com/SiegeSailor/Smarty-Notebook/commit/792d948285511f29e67df3524bebd02180c7180c))
+
+
 ## v1.0.0-release.4 (2025-11-02)
 
 ### Bug Fixes

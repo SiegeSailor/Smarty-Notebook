@@ -1,4 +1,4 @@
 [project]
 name = "smarty-notebook"
-version = "1.0.0-release.4"
+version = "1.0.0-release.5"
 description = "A Jupyter notebook collection for executing Smarty requests. The notebook provides easy-to-use cells and batch configurations."
