@@ -5,13 +5,12 @@ on:
     branches:
       - main
       - release
-    paths-ignore: &ignore-paths
+    paths-ignore:
       - "./.github/CONTRIBUTING.md"
       - "./.github/ISSUE_TEMPLATE/*"
       - "./.github/pull_request_template.md"
       - "./README.md"
   pull_request:
-    paths-ignore: *ignore-paths
 
 permissions:
   contents: read
@@ -82,7 +81,7 @@ jobs:
           git_committer_name: "github-actions"
           git_committer_email: "actions@users.noreply.github.com"
           config_file: "./releaserc.toml"
-          verbosity: 2
+          verbosity: 1
 
       - name: Publish | Upload to GitHub Release Assets
         uses: python-semantic-release/publish-action@v10.4.1
