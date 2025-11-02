@@ -23,7 +23,7 @@ prerelease_token = ""
 [semantic_release.branches.release]
 match = "(release)"
 prerelease = true
-prerelease_token = "release"
+prerelease_token = "prerelease"
 
 [semantic_release.changelog]
 exclude_commit_patterns = []
