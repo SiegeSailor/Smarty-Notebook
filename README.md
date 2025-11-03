@@ -15,28 +15,75 @@ Follow the steps below to set up your local environment for development.
 
 #### Prerequisites
 
-- [`pyenv`](https://github.com/pyenv/pyenv)
-- [`pyenv-virtualenv`](https://github.com/pyenv/pyenv-virtualenv)
+- [`pyenv`](https://github.com/pyenv/pyenv): 2.6.5
+- [`pyenv-virtualenv`](https://github.com/pyenv/pyenv-virtualenv): 1.2.4
 
 #### Setting Up a Virtual Environment
 
 Create a virtual environment for the project:
 
-```bash
+```shell
 pyenv install 3.11.13
 pyenv virtualenv 3.11.13 smarty-notebook
 pyenv activate smarty-notebook
+pip install poetry==2.2.1
 ```
 
-> [!Note]
+> [!Tip]
 > You can use `pyenv local smarty-notebook` to set the virtual environment for the current directory.
+
+> [!Tip]
+> You can use `pyenv uninstall smarty-notebook` to remove the virtual environment.
 
 #### Installing Dependencies
 
 To install the required dependencies, run the following command:
 
-```bash
-pip install --requirement ./requirements.txt
+```shell
+poetry install
+```
+
+#### Verifying the Installation
+
+`pyenv version` should show output similar to the following:
+
+```shell
+smarty-notebook (set by PYENV_VERSION environment variable)
+```
+
+`poetry env info` should show output similar to the following:
+
+```shell
+Virtualenv
+Python:         3.11.13
+Implementation: CPython
+Path:           /Users/user/.pyenv/versions/3.11.13/envs/smarty-notebook
+Executable:     /Users/user/.pyenv/versions/3.11.13/envs/smarty-notebook/bin/python
+Valid:          True
+
+Base
+Platform:   darwin
+OS:         posix
+Python:     3.11.13
+Path:       /Users/user/.pyenv/versions/3.11.13
+Executable: /Users/user/.pyenv/versions/3.11.13/bin/python3.11
+```
+
+`poetry show` should list the installed packages similar to the following:
+
+```shell
+certifi            2025.10.5   Python package for providing Mozilla CA Bundle.
+charset-normalizer 3.4.4       The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet.
+idna               3.11        Internationalized Domain Names in Applications (IDNA)
+numpy              2.3.3       Fundamental package for array computing in Python
+pandas             2.3.2       Powerful data structures for data analysis, time series, and statistics
+python-dateutil    2.9.0.post0 Extensions to the standard Python datetime module
+python-dotenv      1.2.1       Read key-value pairs from a .env file and set them as environment variables
+pytz               2025.2      World timezone definitions, modern and historical
+requests           2.32.5      Python HTTP for Humans.
+six                1.17.0      Python 2 and 3 compatibility utilities
+tzdata             2025.2      Provider of IANA time zone data
+urllib3            2.5.0       HTTP library with thread-safe connection pooling, file post, and more.
 ```
 
 #### Supplying Smarty API Credentials
