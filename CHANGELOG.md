@@ -2,6 +2,22 @@
 
 <!-- version list -->
 
+## v1.0.0-release.6 (2025-11-03)
+
+### Bug Fixes
+
+- Add notebooks.zip to .gitignore
+  ([`7bf5da0`](https://github.com/SiegeSailor/Smarty-Notebook/commit/7bf5da01beb52e03f137db0f6d7ea4c3c3a0b19a))
+
+- Update prerelease_token to "release" in releaserc.toml
+  ([`91b710b`](https://github.com/SiegeSailor/Smarty-Notebook/commit/91b710b1873d8b5d9e4589a7b86eb22afbec6132))
+
+### Documentation
+
+- Add empty community health files
+  ([`b6d2f5a`](https://github.com/SiegeSailor/Smarty-Notebook/commit/b6d2f5a7ebeb1c5a29e705040774ee424308a50b))
+
+
 ## v1.0.0-prerelease.2 (2025-11-02)
 
 ### Bug Fixes
