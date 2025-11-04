@@ -86,6 +86,9 @@ tzdata             2025.2      Provider of IANA time zone data
 urllib3            2.5.0       HTTP library with thread-safe connection pooling, file post, and more.
 ```
 
+> [!Tip]
+> If you are using VS Code and you don't see the installed packages in the selected interpreter, you may need to restart VS Code. See [this issue](https://github.com/microsoft/vscode-python/issues/16232) for more details.
+
 #### Supplying Smarty API Credentials
 
 To use the Smarty API, you need to provide your [key pairs](https://www.smarty.com/docs/cloud/authentication#keypairs). You can do this by creating a `.env` file with the following environment variables:
