@@ -1,15 +1,13 @@
 # Welcome to Smarty-Notebook Contributing Guide
 
-Thank you for investing your time in contributing to this project. Any contributions you make are greatly appreciated.
+Thank you for investing your time in contributing to this project. Please take a moment to read through [Setting Up a Local Environment](./../README.md#setting-up-a-local-environment) to ensure you have the necessary tools and dependencies installed. If you are new to contributing to open source projects, the following resources may be helpful:
 
-## Getting Started
-
-As a new contributor, please take a moment to read through this guide to understand how to contribute effectively:
-
-- [Finding ways to contribute to open source on GitHub](https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github)
 - [Set up Git](https://docs.github.com/en/get-started/git-basics/set-up-git)
-- [GitHub flow](https://docs.github.com/en/get-started/using-github/github-flow)
 - [Collaborating with pull requests](https://docs.github.com/en/github/collaborating-with-pull-requests)
+- [Signing commits](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits)
+
+> [!Note]
+> Signing commits is mandatory for this project.
 
 ### Branching Strategy
 
