@@ -8,10 +8,7 @@
 
 ### Checklist
 
-- [ ] Use a conventional commits style title
+- [ ] Use a [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) style title
 - [ ] Add corresponding reviewers and assignees
 - [ ] Add relevant labels
-
-### Relevant Issues
-
-<!-- Use [keywords to close issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue) that are relevant to this pull request. -->
+- [ ] Mention relevant issues in [Summary](#summary) using [Keywords](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue)
