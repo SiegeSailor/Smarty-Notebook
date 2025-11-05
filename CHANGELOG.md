@@ -2,6 +2,74 @@
 
 <!-- version list -->
 
+## v1.0.0-release.7 (2025-11-05)
+
+### Bug Fixes
+
+- Clear version_toml in releaserc.toml
+  ([`1c65438`](https://github.com/SiegeSailor/Smarty-Notebook/commit/1c65438489fb1772b4546b1cdba4df18d077f55a))
+
+- Remove obsolete notebooks.zip file
+  ([`205420c`](https://github.com/SiegeSailor/Smarty-Notebook/commit/205420cf7dfc521e6804d69e3da4a2b137560e48))
+
+### Continuous Integration
+
+- Add action commitlint
+  ([`a35e20c`](https://github.com/SiegeSailor/Smarty-Notebook/commit/a35e20c4b5d6aa3be97cfc55524f19da095993ea))
+
+- Remove pull request from on and add paths-ignore
+  ([`ec96b9f`](https://github.com/SiegeSailor/Smarty-Notebook/commit/ec96b9f273058177660d30d38be24efd979581e4))
+
+- Update action secrets
+  ([`b3da1ce`](https://github.com/SiegeSailor/Smarty-Notebook/commit/b3da1ce9be0628ef5b683c513e85bcf669f1e475))
+
+- Update GitHub token to use DEPLOY_KEY_SMARTY_NOTEBOOK
+  ([`5bce9ba`](https://github.com/SiegeSailor/Smarty-Notebook/commit/5bce9ba284dcb27864e6e170d3610b0e8b561ede))
+
+### Documentation
+
+- Add Code of Conduct
+  ([`441a06a`](https://github.com/SiegeSailor/Smarty-Notebook/commit/441a06a848906f86ace4969efc8e056394d68c8c))
+
+- Add governance structure and maintainer responsibilities
+  ([`87e00c0`](https://github.com/SiegeSailor/Smarty-Notebook/commit/87e00c02124d69b1f9af7f51bf0603e0d2ad510c))
+
+- Add initial security policy and reporting guidelines
+  ([`c966b4b`](https://github.com/SiegeSailor/Smarty-Notebook/commit/c966b4b7341cd47ccb6b5fe3e637d5312b686fbd))
+
+- Add support section with resources for assistance
+  ([`f003ceb`](https://github.com/SiegeSailor/Smarty-Notebook/commit/f003cebed1d0f1b8103b983a8dbacc1977e63fe1))
+
+- Add tip for restarting VS Code to see installed packages
+  ([`2bc1609`](https://github.com/SiegeSailor/Smarty-Notebook/commit/2bc16094b0222ca6b388c9aab10ad03e320f1870))
+
+- Remove FUNDING.yml file
+  ([`60f3c69`](https://github.com/SiegeSailor/Smarty-Notebook/commit/60f3c69591b8fc71ad6b3369add44e0df4edf367))
+
+- Update contributing guide
+  ([`e28bbb6`](https://github.com/SiegeSailor/Smarty-Notebook/commit/e28bbb6dee0767af488c8d1fff468557ee83cc15))
+
+- Update contributing guide
+  ([`762a8d5`](https://github.com/SiegeSailor/Smarty-Notebook/commit/762a8d59c351486674e05905e0cd4859257ab413))
+
+- Update CONTRIBUTING.md for commitlint
+  ([`cc594a1`](https://github.com/SiegeSailor/Smarty-Notebook/commit/cc594a1fc48333b8a5bbd67cf4695505d7975914))
+
+- Update the Smarty API keys image
+  ([`fe18aef`](https://github.com/SiegeSailor/Smarty-Notebook/commit/fe18aef0510bf84ef784b73b749dd03318511f4b))
+
+### Features
+
+- Add poetry configuration for virtual environments
+  ([`5831afc`](https://github.com/SiegeSailor/Smarty-Notebook/commit/5831afc0931be0a9c0ab7264d1a1b4a15b243d30))
+
+- Add pre-commit config
+  ([`755a373`](https://github.com/SiegeSailor/Smarty-Notebook/commit/755a3737016dce23ae6fb85db4bbb086bb826650))
+
+- Use poetry to manage dependencies
+  ([`be34649`](https://github.com/SiegeSailor/Smarty-Notebook/commit/be3464924efdbc3dcf324ccdfcb3c0e0eab3539a))
+
+
 ## v1.0.0-release.6 (2025-11-03)
 
 ### Bug Fixes
