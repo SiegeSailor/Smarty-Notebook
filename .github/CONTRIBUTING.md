@@ -1,4 +1,4 @@
-# Welcome to Smarty-Notebook Contributing Guide
+# Contributing
 
 Thank you for investing your time in contributing to this project. Please take a moment to read through [Setting Up a Local Environment](./../README.md#setting-up-a-local-environment) to ensure you have the necessary tools and dependencies installed. If you are new to contributing to open source projects, the following resources may be helpful:
 
