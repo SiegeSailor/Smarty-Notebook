@@ -23,8 +23,15 @@ flowchart TB
     R --> PR2[Pull Request]
     PR2 --> M(main)
 
-    R -->|push| Prerelease1[/Prerelease/]
-    PR1 -->|push| Prerelease2[/Prerelease/]
-    PR2 -->|push| Prerelease3[/Prerelease/]
+    R -->|push| Prerelease[/Prerelease/]
     M -->|push| Release[/Release/]
+```
+
+#### Commitlint
+
+This project uses [Commitlint](https://commitlint.js.org/) to ensure that all commit messages follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification. It is recommended to have `pre-commit` installed on your local end before pushing commits. Please make sure you already [Set Up a Local Environment](./../README.md#setting-up-a-local-environment) before running the following command:
+
+```shell
+pip install pre-commit
+pre-commit install --hook-type commit-msg
 ```
