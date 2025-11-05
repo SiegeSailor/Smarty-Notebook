@@ -6,11 +6,15 @@ on:
       - main
       - release
     paths-ignore:
+      - "./.github/CODE_OF_CONDUCT.md"
       - "./.github/CONTRIBUTING.md"
+      - "./.github/GOVERNANCE.md"
       - "./.github/ISSUE_TEMPLATE/*"
       - "./.github/pull_request_template.md"
+      - "./.github/SECURITY.md"
+      - "./.github/SUPPORT.md"
+      - "./images/*"
       - "./README.md"
-  pull_request:
 
 permissions:
   contents: read
