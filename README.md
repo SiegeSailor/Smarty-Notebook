@@ -1,13 +1,13 @@
 # Smarty Notebook
 
-This repository contains Jupyter Notebooks that use the [Smarty Cloud API](https://www.smarty.com/docs/cloud) for various common tasks. Each notebook is designed to be self-contained and easy to use:
+This repository contains Jupyter Notebooks that use the [Smarty | Cloud API](https://www.smarty.com/docs/cloud) for various common tasks. Each notebook is designed to be self-contained and easy to use:
 
 - [x] Fetch U.S. ZIP+4 Code by Address
 - [ ] Fetch International Postal Code by Address
 
 ## Using the Notebooks
 
-You can access the notebooks directly on [GitHub.dev](https://github.dev/SiegeSailor/Smarty-Notebook), or other means of accessing Jupyter Notebooks, such as such as [GitHub Codespaces](https://github.blog/changelog/2022-11-09-using-codespaces-with-jupyterlab-public-beta/) or [Google Colab](https://colab.google/). You can also clone this project to your local machine and follow the [Setting Up a Local Environment](#setting-up-a-local-environment) section below to run the notebooks locally.
+You can access the notebooks directly on [GitHub | GitHub.dev](https://github.dev/SiegeSailor/Smarty-Notebook), or other means of accessing Jupyter Notebooks, such as such as [GitHub | Codespaces](https://github.blog/changelog/2022-11-09-using-codespaces-with-jupyterlab-public-beta/) or [Google | Colab](https://colab.google/). You can also clone this project to your local machine and follow the [Setting Up a Local Environment](#setting-up-a-local-environment) section below to run the notebooks locally.
 
 ### Setting Up a Local Environment
 
@@ -99,5 +99,5 @@ SMARTY_AUTH_TOKEN="<smarty_auth_token>"
 ```
 
 > [!Note]
-> You can obtain a free Smarty account and generate key pairs at [Smarty Sign Up](https://www.smarty.com/signup). You will see **API Keys** under your account dashboard. See the screenshot for _Smarty - Account - Dashboard - API Keys - Secret Keys_:
+> You can obtain a free Smarty account and generate key pairs at [Smarty | Sign Up](https://www.smarty.com/signup). You will see **API Keys** under your account dashboard. See the screenshot for _Smarty - Account - Dashboard - API Keys - Secret Keys_:
 > ![Smarty - Account - Dashboard - API Keys - Secret Keys](./images/smarty-account-dashboard-api_keys-secret_keys.png)
