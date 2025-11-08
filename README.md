@@ -17,6 +17,7 @@ Follow the steps below to set up your local environment for development.
 
 - [`pyenv`](https://github.com/pyenv/pyenv): 2.6.5
 - [`pyenv-virtualenv`](https://github.com/pyenv/pyenv-virtualenv): 1.2.4
+- [`poetry`](https://python-poetry.org/): 2.2.1
 
 #### Setting Up a Virtual Environment
 
@@ -26,7 +27,6 @@ Create a virtual environment for the project:
 pyenv install 3.11.13
 pyenv virtualenv 3.11.13 smarty-notebook
 pyenv activate smarty-notebook
-pip install poetry==2.2.1
 ```
 
 > [!Tip]
@@ -40,7 +40,7 @@ pip install poetry==2.2.1
 To install the required dependencies, run the following command:
 
 ```shell
-poetry install
+poetry install --without dev
 ```
 
 #### Verifying the Installation
