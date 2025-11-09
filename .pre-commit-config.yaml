@@ -1,14 +1,5 @@
 repos:
-  # - repo: https://github.com/opensource-nepal/commitlint
-  #   rev: v1.3.0
-  #   hooks:
-  #     - id: commitlint
-  - repo: local
+  - repo: https://github.com/opensource-nepal/commitlint
+    rev: v1.3.0
     hooks:
-      - id: semantic-release-check
-        name: semantic-release version check
-        entry: semantic-release --config "./releaserc.toml" --strict version --print
-        language: system
-        stages: [pre-commit]
-        pass_filenames: false
-        always_run: true
+      - id: commitlint
