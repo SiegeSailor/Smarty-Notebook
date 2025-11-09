@@ -5,16 +5,10 @@ on:
     branches:
       - main
       - release
-    paths-ignore:
-      - "./.github/CODE_OF_CONDUCT.md"
-      - "./.github/CONTRIBUTING.md"
-      - "./.github/GOVERNANCE.md"
-      - "./.github/ISSUE_TEMPLATE/*"
-      - "./.github/pull_request_template.md"
-      - "./.github/SECURITY.md"
-      - "./.github/SUPPORT.md"
-      - "./images/*"
-      - "./README.md"
+  pull_request:
+    branches:
+      - main
+      - release
 
 permissions:
   contents: read
@@ -31,6 +25,7 @@ jobs:
       - name: Action | Validate Commit Messages
         uses: opensource-nepal/commitlint@v1
       - name: Action | Validate PR Title
+        if: github.event_name == 'pull_request'
         uses: CashStory/commitizen-action-pr@1.0.1
 
   release:
