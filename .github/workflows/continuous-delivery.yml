@@ -26,30 +26,6 @@ jobs:
       contents: read
       pull-requests: read
 
-    # steps:
-    #   - name: Action | Checkout Repository on Pull Request
-    #     uses: actions/checkout@v5
-    #     if: github.event_name == 'pull_request'
-    #     with:
-    #       fetch-depth: 0
-    #       ref: ${{ github.event.pull_request.head.sha }}
-    #       token: ${{ secrets.GITHUB_TOKEN }}
-
-    #   - name: Setup | Commit PR Title
-    #     if: github.event_name == 'pull_request'
-    #     run: |
-    #       git config user.name "github-actions[bot]"
-    #       git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-    #       git commit --allow-empty -m "${{ github.event.pull_request.title }}"
-
-    #   - name: Action | Validate Commit Messages
-    #     uses: opensource-nepal/commitlint@v1
-
-    #   - name: Cleanup | Revert PR Title Commit
-    #     if: github.event_name == 'pull_request'
-    #     run: |
-    #       git reset --hard HEAD~1
-
     steps:
       - name: Action | Checkout Repository on Pull Request
         uses: actions/checkout@v5
