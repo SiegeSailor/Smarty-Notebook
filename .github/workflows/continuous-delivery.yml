@@ -27,12 +27,19 @@ jobs:
       pull-requests: read
 
     steps:
-      - name: Action | Validate PR Title
-        if: github.event_name == 'pull_request'
-        uses: CashStory/commitizen-action-pr@1.0.1
+      - name: Setup | Commit PR Title
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "${{ github.event.pull_request.title }}"
 
       - name: Action | Validate Commit Messages
         uses: opensource-nepal/commitlint@v1
+
+      - name: Cleanup | Revert PR Title Commit
+        if: github.event_name == 'pull_request'
+        run: |
+          git reset --hard HEAD~1
 
   release:
     runs-on: ubuntu-latest
