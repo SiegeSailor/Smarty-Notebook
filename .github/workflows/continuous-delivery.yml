@@ -28,6 +28,7 @@ jobs:
 
     steps:
       - name: Action | Validate PR Title
+        if: github.event_name == 'pull_request'
         uses: CashStory/commitizen-action-pr@1.0.1
 
       - name: Action | Validate Commit Messages
