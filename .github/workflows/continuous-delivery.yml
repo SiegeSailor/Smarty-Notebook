@@ -29,17 +29,18 @@ jobs:
     steps:
       - name: Action | Checkout Repository on Pull Request
         uses: actions/checkout@v4
+        if: github.event_name == 'pull_request'
         with:
           fetch-depth: 0
-          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.sha }}
+          ref: ${{ github.event.pull_request.head.sha }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup | Commit PR Title
-        if: github.event_name == 'pull_request' && github.event.pull_request.title != ''
+        if: github.event_name == 'pull_request'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "${{ github.event.pull_request.title }}"
+          git commit --allow-empty -m "${{ github.event.pull_request.title }}"
 
       - name: Action | Validate Commit Messages
         uses: opensource-nepal/commitlint@v1
