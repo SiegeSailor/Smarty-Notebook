@@ -31,7 +31,7 @@ jobs:
         uses: actions/checkout@v5
         if: github.event_name == 'pull_request'
         with:
-          fetch-depth: 0
+          fetch-depth: 1
           ref: ${{ github.event.pull_request.head.sha }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -41,22 +41,15 @@ jobs:
         with:
           python-version: "3.11.13"
 
-      - name: Action | Setup Poetry
-        uses: snok/install-poetry@v1
-        if: github.event_name == 'pull_request'
-        with:
-          version: 2.2.1
-          virtualenvs-in-project: false
-
-      - name: Setup | Install Development Dependencies
+      - name: Setup | Install Commitlint
         if: github.event_name == 'pull_request'
         run: |
-          poetry install --with dev
+          pip install commitlint
 
       - name: Evaluate | Validate PR Title
         if: github.event_name == 'pull_request'
         run: |
-          poetry run commitlint "${{ github.event.pull_request.title }}"
+          commitlint "${{ github.event.pull_request.title }}"
 
       - name: Action | Validate Commit Messages
         uses: opensource-nepal/commitlint@v1
