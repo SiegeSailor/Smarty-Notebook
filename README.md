@@ -20,6 +20,21 @@ Follow the steps below to set up your local environment for development.
 - [`pyenv-virtualenv`](https://github.com/pyenv/pyenv-virtualenv): 1.2.4
 - [`poetry`](https://python-poetry.org/): 2.2.1
 
+> [!Tip]
+> You can add the following to your shell configuration file to automatically initialize and set up auto-completion:
+>
+> ```shell
+> # ===> PYENV
+> export PYENV_ROOT="$HOME/.pyenv"
+> [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+> eval "$(pyenv init - zsh)"
+> # ===> Poetry
+> fpath+=~/.zfunc
+> export PATH="/Users/user/.local/bin:$PATH"
+> # ===> Auto Completion
+> autoload -Uz compinit && compinit
+> ```
+
 #### Setting Up a Virtual Environment
 
 Create a virtual environment for the project:
