@@ -68,7 +68,6 @@ name = "origin"
 type = "github"
 ignore_token_for_push = false
 insecure = false
-token = "PERSONAL_ACCESS_TOKEN_ADMIN"
 
 [semantic_release.publish]
 dist_glob_patterns = ["./dist/*"]
