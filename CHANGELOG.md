@@ -86,6 +86,13 @@
 - Update pre-commit configuration
   ([`1884b2e`](https://github.com/SiegeSailor/Smarty-Notebook/commit/1884b2efc3208066887aa583e63d9aee13aa2d04))
 
+## v1.0.0 (2025-11-05)
+
+### Documentation
+
+- Update dependencies format
+  ([`7451f61`](https://github.com/SiegeSailor/Smarty-Notebook/commit/7451f610077cdbcdf7e5796d1fa76765460b4d24))
+
 
 ## v1.0.0-release.7 (2025-11-05)
 
