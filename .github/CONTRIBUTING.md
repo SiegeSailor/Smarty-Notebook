@@ -37,7 +37,7 @@ flowchart TB
 
 ### Release Process
 
-The release process has been automated using [Python Semantic Release | Latest](https://python-semantic-release.readthedocs.io/en/latest/) to ensure that all commit messages follow the [Conventional Commits | 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/), and the relevant constraints are defined in the [releaserc.toml](./../releaserc.toml) file and [GitHub | Rules](https://github.com/SiegeSailor/Smarty-Notebook/settings/rules). The releases and prereleases should be versioned well following [Branching Strategy](#branching-strategy). Note that there are no build, package, and publish steps for this project, as it only contains Jupyter Notebooks.
+The release process has been automated using [Python Semantic Release](https://python-semantic-release.readthedocs.io/en/latest/) to ensure that all commit messages follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), and the relevant constraints are defined in the [releaserc.toml](./../releaserc.toml) file and [GitHub Settings Rules](https://github.com/SiegeSailor/Smarty-Notebook/settings/rules). The releases and prereleases should be versioned well following [Branching Strategy](#branching-strategy). Note that there are no build, package, and publish steps for this project, as it only contains Jupyter Notebooks.
 
 #### Commitlint
 
