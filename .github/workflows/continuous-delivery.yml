@@ -20,7 +20,7 @@ permissions:
   contents: read
 
 jobs:
-  commitlint:
+  linting:
     runs-on: ubuntu-latest
 
     permissions:
@@ -28,8 +28,10 @@ jobs:
       pull-requests: read
 
     steps:
-      - name: Action | Run Conventional Commitlint
+      - name: Action | Validate Commit Messages
         uses: opensource-nepal/commitlint@v1
+      - name: Action | Validate PR Title
+        uses: CashStory/commitizen-action-pr@1.0.1
 
   release:
     runs-on: ubuntu-latest
@@ -92,7 +94,7 @@ jobs:
         id: release
         uses: python-semantic-release/python-semantic-release@v10.4.1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN_ADMIN }}
           git_committer_name: "github-actions"
           git_committer_email: "actions@users.noreply.github.com"
           config_file: "./releaserc.toml"
@@ -102,7 +104,7 @@ jobs:
         uses: python-semantic-release/publish-action@v10.4.1
         if: steps.release.outputs.released == 'true'
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN_ADMIN }}
           tag: ${{ steps.release.outputs.tag }}
 
       - name: Action | Upload Artifacts
