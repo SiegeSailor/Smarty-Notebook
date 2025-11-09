@@ -11,7 +11,7 @@ Thank you for investing your time in contributing to this project. If you are ne
 
 ## Setting Up a Development Environment
 
-Please take a moment to read through [Setting Up a Local Environment](./../README.md#setting-up-a-local-environment) to ensure you have the necessary tools and dependencies installed. Once we have your local environment configured, installed the development dependencies with:
+Please take a moment to read through [Setting Up a Local Environment](./../README.md#setting-up-a-local-environment) to ensure you have the necessary tools and dependencies installed. Once we have your local environment configured, install the development dependencies with:
 
 ```shell
 poetry install --with dev
