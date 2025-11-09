@@ -2,6 +2,20 @@
 
 <!-- version list -->
 
+## v1.1.0-release.2 (2025-11-09)
+
+### Bug Fixes
+
+- Add condition to validate PR title step
+  ([`7dde655`](https://github.com/SiegeSailor/Smarty-Notebook/commit/7dde655d6ae5af136278b174efe572fa546076fb))
+
+- Correct typo in security policy document
+  ([`271fa11`](https://github.com/SiegeSailor/Smarty-Notebook/commit/271fa115fb45d2fbce71647e26c1dc387e45c3e4))
+
+- Update pull request event types and condition
+  ([`5e33d40`](https://github.com/SiegeSailor/Smarty-Notebook/commit/5e33d408c4b2a53adeb386063a2d07017c753b3b))
+
+
 ## v1.1.0-release.1 (2025-11-09)
 
 ### Bug Fixes
