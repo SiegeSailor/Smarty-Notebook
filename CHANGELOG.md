@@ -2,6 +2,19 @@
 
 <!-- version list -->
 
+## v1.1.0-release.1 (2025-11-09)
+
+### Bug Fixes
+
+- Update links and formatting in documentation
+  ([`b175ac6`](https://github.com/SiegeSailor/Smarty-Notebook/commit/b175ac6114a3c6c0c669c068c0454b0267f1c6a9))
+
+### Features
+
+- Add commitlint for linting commit messages
+  ([`3f83a3d`](https://github.com/SiegeSailor/Smarty-Notebook/commit/3f83a3d5930c7ae17cfa1cb9cf3e01965510e191))
+
+
 ## v1.0.0-release.8 (2025-11-09)
 
 ### Bug Fixes
