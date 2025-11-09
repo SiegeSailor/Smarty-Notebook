@@ -80,7 +80,7 @@ jobs:
       - name: Evaluate | Validate PR Title
         if: github.event_name == 'pull_request'
         run: |
-          commitlint "${{ github.event.pull_request.title }}"
+          poetry run commitlint "${{ github.event.pull_request.title }}"
 
       - name: Action | Validate Commit Messages
         uses: opensource-nepal/commitlint@v1
