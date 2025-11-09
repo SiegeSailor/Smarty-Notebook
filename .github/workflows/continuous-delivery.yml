@@ -22,20 +22,22 @@ jobs:
       pull-requests: read
 
     steps:
-      - name: Action | Validate Commit Messages
-        uses: opensource-nepal/commitlint@v1
       - name: Action | Validate PR Title
         if: github.event_name == 'pull_request'
         uses: CashStory/commitizen-action-pr@1.0.1
+      - name: Action | Validate Commit Messages
+        uses: opensource-nepal/commitlint@v1
 
   release:
     runs-on: ubuntu-latest
+    needs: linting
     concurrency:
       group: ${{ github.workflow }}-${{ github.job }}-${{ github.ref_name }}
       cancel-in-progress: false
 
     permissions:
       contents: write
+      pull-requests: write
 
     steps:
       - name: Setup | Checkout Repository on Release Branch
@@ -86,7 +88,7 @@ jobs:
           zip -r notebooks.zip ./notebooks/
 
       - name: Action | Create Semantic Version Release
-        id: release
+        id: semantic-release-release
         uses: python-semantic-release/python-semantic-release@v10.4.1
         with:
           github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN_ADMIN }}
@@ -97,10 +99,10 @@ jobs:
 
       - name: Action | Publish to GitHub Release Assets
         uses: python-semantic-release/publish-action@v10.4.1
-        if: steps.release.outputs.released == 'true'
+        if: steps.semantic-release-release.outputs.released == 'true'
         with:
           github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN_ADMIN }}
-          tag: ${{ steps.release.outputs.tag }}
+          tag: ${{ steps.semantic-release-release.outputs.tag }}
 
       - name: Action | Upload Artifacts
         uses: actions/upload-artifact@v4
@@ -110,4 +112,4 @@ jobs:
           if-no-files-found: error
 
     outputs:
-      released: ${{ steps.release.outputs.released || 'false' }}
+      released: ${{ steps.semantic-release-release.outputs.released || 'false' }}
