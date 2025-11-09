@@ -66,8 +66,11 @@ ignore_merge_commits = true
 [semantic_release.remote]
 name = "origin"
 type = "github"
-ignore_token_for_push = true
+ignore_token_for_push = false
 insecure = false
+token = [
+    { env = "PERSONAL_ACCESS_TOKEN_ADMIN" }
+]
 
 [semantic_release.publish]
 dist_glob_patterns = ["./dist/*"]
