@@ -23,21 +23,21 @@ This project follows a modified GitHub flow that only focuses on two branches:
 
 - `main`: Where the stable and ready-to-use code resides
 - `release`: Where the code is prepared for the next production release
+- `develop`: Where the latest development changes are integrated before being merged into `release`
 
 ```mermaid
 flowchart TB
-    OB(Other Branches) --> PR1[Pull Request]
-    PR1 --> R(release)
-    R --> PR2[Pull Request]
-    PR2 --> M(main)
+    OB(Other Branches) -->|pull request| D(develop)
+    D --> |pull request| R(release)
+    R --> |pull request| M(main)
 
-    R -->|push| Prerelease[/Prerelease/]
-    M -->|push| Release[/Release/]
+    R -->|push or pull request| Prerelease[/Prerelease/]
+    M -->|push or pull request| Release[/Release/]
 ```
 
 ### Release Process
 
-The release process has been automated using [Python Semantic Release](https://python-semantic-release.readthedocs.io/en/latest/) to ensure that all commit messages follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), and the relevant constraints are defined in the [releaserc.toml](./../releaserc.toml) file and [GitHub Settings Rules](https://github.com/SiegeSailor/Smarty-Notebook/settings/rules). The releases and prereleases should be versioned well following [Branching Strategy](#branching-strategy). Note that there are no build, package, and publish steps for this project, as it only contains Jupyter Notebooks.
+The release process has been automated using [Python Semantic Release](https://python-semantic-release.readthedocs.io/en/latest/) to ensure that all commit messages follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), and the relevant constraints are defined in the [releaserc.toml](./../releaserc.toml) file and [GitHub Settings Rules](https://github.com/SiegeSailor/Smarty-Notebook/settings/rules). The releases and prereleases should be versioned well following [Branching Strategy](#branching-strategy). Note that there are no build, test, package, and publish steps for this project, as it only contains Jupyter Notebooks.
 
 #### Commitlint
 
