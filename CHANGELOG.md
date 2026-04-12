@@ -2,6 +2,19 @@
 
 <!-- version list -->
 
+## v2.0.0 (2026-04-12)
+
+### Bug Fixes
+
+- Update virtual environment name to match project rename
+  ([`f029991`](https://github.com/SiegeSailor/SmartyNotebooks/commit/f02999113893d7fa36a646b2725ec8bbfac2f1ec))
+
+### Features
+
+- Rename the project to SmartyNotebooks
+  ([`42f1889`](https://github.com/SiegeSailor/SmartyNotebooks/commit/42f188902601cd9e98609616b336375929324c76))
+
+
 ## v1.1.0 (2026-04-12)
 
 ### Continuous Integration
