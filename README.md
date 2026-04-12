@@ -1,6 +1,6 @@
-# Smarty Notebook
+# SmartyNotebooks
 
-[![Continuous Delivery](https://github.com/SiegeSailor/Smarty-Notebook/actions/workflows/continuous-delivery.yml/badge.svg)](https://github.com/SiegeSailor/Smarty-Notebook/actions/workflows/continuous-delivery.yml)
+[![Continuous Delivery](https://github.com/SiegeSailor/SmartyNotebooks/actions/workflows/continuous-delivery.yml/badge.svg)](https://github.com/SiegeSailor/SmartyNotebooks/actions/workflows/continuous-delivery.yml)
 
 This repository contains Jupyter Notebooks that use the [Smarty Cloud API](https://www.smarty.com/docs/cloud) for various common tasks. Each notebook is designed to be self-contained and easy to use:
 
@@ -10,7 +10,7 @@ This repository contains Jupyter Notebooks that use the [Smarty Cloud API](https
 
 ## Using the Notebooks
 
-You can access the notebooks directly on [GitHub.dev](https://github.dev/SiegeSailor/Smarty-Notebook), or other means of accessing Jupyter Notebooks, such as such as [GitHub Codespaces](https://github.blog/changelog/2022-11-09-using-codespaces-with-jupyterlab-public-beta/) or [Google Colab](https://colab.google/). You can also clone this project to your local machine and follow the [Setting Up a Local Environment](#setting-up-a-local-environment) section below to run the notebooks locally.
+You can access the notebooks directly on [GitHub.dev](https://github.dev/SiegeSailor/SmartyNotebooks), or other means of accessing Jupyter Notebooks, such as such as [GitHub Codespaces](https://github.blog/changelog/2022-11-09-using-codespaces-with-jupyterlab-public-beta/) or [Google Colab](https://colab.google/). You can also clone this project to your local machine and follow the [Setting Up a Local Environment](#setting-up-a-local-environment) section below to run the notebooks locally.
 
 ### Setting Up a Local Environment
 
