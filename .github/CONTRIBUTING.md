@@ -46,5 +46,5 @@ The release process has been automated using [Python Semantic Release](https://p
 It is recommended to have `pre-commit` installed on your local end before pushing commits. Please make sure you already [Set Up a Development Environment](#setting-up-a-development-environment) before running the following command:
 
 ```shell
-pre-commit install
+poetry run pre-commit install
 ```
