@@ -32,7 +32,7 @@ Follow the steps below to set up your local environment for development.
 > eval "$(pyenv init - zsh)"
 > # ===> Poetry
 > fpath+=~/.zfunc
-> export PATH="/Users/user/.local/bin:$PATH"
+> export PATH="$HOME/.local/bin:$PATH"
 > # ===> Auto Completion
 > autoload -Uz compinit && compinit
 > ```
