@@ -43,15 +43,15 @@ Create a virtual environment for the project:
 
 ```shell
 pyenv install 3.11.13
-pyenv virtualenv 3.11.13 smarty-notebook
-pyenv activate smarty-notebook
+pyenv virtualenv 3.11.13 smartynotebooks
+pyenv activate smartynotebooks
 ```
 
 > [!Tip]
-> You can use `pyenv local smarty-notebook` to set the virtual environment for the current directory.
+> You can use `pyenv local smartynotebooks` to set the virtual environment for the current directory.
 
 > [!Tip]
-> You can use `pyenv uninstall smarty-notebook` to remove the virtual environment.
+> You can use `pyenv uninstall smartynotebooks` to remove the virtual environment.
 
 #### Installing Dependencies
 
@@ -66,7 +66,7 @@ poetry install --without dev
 `pyenv version` should show output similar to the following:
 
 ```shell
-smarty-notebook (set by PYENV_VERSION environment variable)
+smartynotebooks (set by PYENV_VERSION environment variable)
 ```
 
 `poetry env info` should show output similar to the following:
@@ -75,8 +75,8 @@ smarty-notebook (set by PYENV_VERSION environment variable)
 Virtualenv
 Python:         3.11.13
 Implementation: CPython
-Path:           /Users/user/.pyenv/versions/3.11.13/envs/smarty-notebook
-Executable:     /Users/user/.pyenv/versions/3.11.13/envs/smarty-notebook/bin/python
+Path:           /Users/user/.pyenv/versions/3.11.13/envs/smartynotebooks
+Executable:     /Users/user/.pyenv/versions/3.11.13/envs/smartynotebooks/bin/python
 Valid:          True
 
 Base
