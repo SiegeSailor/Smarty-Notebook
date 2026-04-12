@@ -2,6 +2,85 @@
 
 <!-- version list -->
 
+## v1.1.0 (2026-04-12)
+
+### Continuous Integration
+
+- Add checkout step in linting
+  ([`a46461f`](https://github.com/SiegeSailor/Smarty-Notebook/commit/a46461f983723c7858d2a46f432af037a87fe0da))
+
+- Add condition to checkout and commit PR title
+  ([`2bf27ae`](https://github.com/SiegeSailor/Smarty-Notebook/commit/2bf27aef0212d4d2d8684067e3257a65bd77d68a))
+
+- Enhance checkout step in linting
+  ([`b8f1514`](https://github.com/SiegeSailor/Smarty-Notebook/commit/b8f1514fa18e8c16d2997d4e71e1ea05537dde9a))
+
+- Install commitlint to verify PR title
+  ([`0a453ca`](https://github.com/SiegeSailor/Smarty-Notebook/commit/0a453caa43f3f40a56ba73de1c0e466c3790061c))
+
+- Only run release on push event and specify commitlint version
+  ([`38bb054`](https://github.com/SiegeSailor/Smarty-Notebook/commit/38bb054ed5375697aa54d95d4de09fbdc58db818))
+
+- Pin v1 commitlint
+  ([`7622506`](https://github.com/SiegeSailor/Smarty-Notebook/commit/7622506c396a8876b94b588127aec7df06b2c80f))
+
+- Refine pull request checkout and commit title handling
+  ([`bce1cb5`](https://github.com/SiegeSailor/Smarty-Notebook/commit/bce1cb5aa933e297b7079f912c9c77e34ea4af8d))
+
+- Remove commented-out steps
+  ([`96300dd`](https://github.com/SiegeSailor/Smarty-Notebook/commit/96300dde418129671322183953e6083d351cbca0))
+
+- Update checkout action to version 5
+  ([`f42b8da`](https://github.com/SiegeSailor/Smarty-Notebook/commit/f42b8da6701aa388dbbb4a5a6ca7d2f8438f2803))
+
+- Update checkout step to use pull request head SHA
+  ([`420b37a`](https://github.com/SiegeSailor/Smarty-Notebook/commit/420b37a66de9e554b44978b4f85727d6d5f4913f))
+
+- Update commitlint version to 1.13.3
+  ([`d204a6c`](https://github.com/SiegeSailor/Smarty-Notebook/commit/d204a6cc48945d244d35b907fb92365a23a5344c))
+
+- Update commitlint version to 1.13.3 in continuous delivery workflow
+  ([`632a9f6`](https://github.com/SiegeSailor/Smarty-Notebook/commit/632a9f68b637ab8c01698ee3b84160676b895a5e))
+
+- Update commitlint version to 1.13.3 in pre-commit configuration
+  ([`7dc8a07`](https://github.com/SiegeSailor/Smarty-Notebook/commit/7dc8a074fe49abc384c56ba77588295e30f5a97b))
+
+- Update commitlint version to v1.13.3
+  ([`a557f1a`](https://github.com/SiegeSailor/Smarty-Notebook/commit/a557f1a28e4b2e32c35bd09c2856905298930f9e))
+
+- Update fetch-depth for checkout and install commitlint via pip
+  ([`cfa4376`](https://github.com/SiegeSailor/Smarty-Notebook/commit/cfa4376ac947c2849dfc32db7c99ae33925ae992))
+
+- Update PR title handling
+  ([`29f8415`](https://github.com/SiegeSailor/Smarty-Notebook/commit/29f84153e83c6eb5be8937d57e5d727e31886071))
+
+- Use Poetry for commitlint
+  ([`8449315`](https://github.com/SiegeSailor/Smarty-Notebook/commit/84493156152613cac48a98c07873075ff3130b8f))
+
+- Use semantic versions for actions
+  ([`6b2a788`](https://github.com/SiegeSailor/Smarty-Notebook/commit/6b2a788c704824b916dd4d3e581f4d1676eacb99))
+
+### Documentation
+
+- Add badges for Conventional Commits and Continuous Delivery
+  ([`beea33d`](https://github.com/SiegeSailor/Smarty-Notebook/commit/beea33deebb6ce3118d1ceb05c24c95c8ce05d6f))
+
+- Add setup instructions for in README.md
+  ([`cc3bf9f`](https://github.com/SiegeSailor/Smarty-Notebook/commit/cc3bf9f54990ce8ad04fc13107f8a49125186d32))
+
+- Update branching strategy and flowchart
+  ([`d0f139e`](https://github.com/SiegeSailor/Smarty-Notebook/commit/d0f139e813dadaf583c6468f7ef73fa17a1ed3c9))
+
+- Update CONTRIBUTING.md time tense
+  ([`c5fb8ae`](https://github.com/SiegeSailor/Smarty-Notebook/commit/c5fb8ae04458f0853aa5a252f76cc8f109ac5faa))
+
+- Update local bin path in README.md for better portability
+  ([`ec1dd4e`](https://github.com/SiegeSailor/Smarty-Notebook/commit/ec1dd4efa1eb2dfc2513cf0a7b8fe0595b5920a9))
+
+- Update pre-commit installation command in CONTRIBUTING.md
+  ([`e516efa`](https://github.com/SiegeSailor/Smarty-Notebook/commit/e516efa369de13402f139c485a9c4e70a585c49e))
+
+
 ## v1.1.0-release.2 (2025-11-09)
 
 ### Bug Fixes
