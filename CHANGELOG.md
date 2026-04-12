@@ -20,13 +20,13 @@
 ### Continuous Integration
 
 - Add checkout step in linting
-  ([`a46461f`](https://github.com/SiegeSailor/SmartyNotebooks/commit/a46461f983723c7858d2a46f432af037a87fe0da))
+  ([`a46461f`](https://github.com/SiegeSailor/Smarty-Notebook-Collection/commit/a46461f983723c7858d2a46f432af037a87fe0da))
 
 - Add condition to checkout and commit PR title
-  ([`2bf27ae`](https://github.com/SiegeSailor/SmartyNotebooks/commit/2bf27aef0212d4d2d8684067e3257a65bd77d68a))
+  ([`2bf27ae`](https://github.com/SiegeSailor/Smarty-Notebook-Collection/commit/2bf27aef0212d4d2d8684067e3257a65bd77d68a))
 
 - Enhance checkout step in linting
-  ([`b8f1514`](https://github.com/SiegeSailor/SmartyNotebooks/commit/b8f1514fa18e8c16d2997d4e71e1ea05537dde9a))
+  ([`b8f1514`](https://github.com/SiegeSailor/Smarty-Notebook-Collection/commit/b8f1514fa18e8c16d2997d4e71e1ea05537dde9a))
 
 - Install commitlint to verify PR title
   ([`0a453ca`](https://github.com/SiegeSailor/Smarty-Notebook/commit/0a453caa43f3f40a56ba73de1c0e466c3790061c))
@@ -39,7 +39,7 @@
 
 - Refine pull request checkout and commit title handling
   ([`bce1cb5`](https://github.com/SiegeSailor/Smarty-Notebook/commit/bce1cb5aa933e297b7079f912c9c77e34ea4af8d))
-  SmartyNotebooks
+  Smarty-Notebook-Collection
 - Remove commented-out steps
   ([`96300dd`](https://github.com/SiegeSailor/Smarty-Notebook/commit/96300dde418129671322183953e6083d351cbca0))
 
@@ -47,19 +47,19 @@
   ([`f42b8da`](https://github.com/SiegeSailor/Smarty-Notebook/commit/f42b8da6701aa388dbbb4a5a6ca7d2f8438f2803))
 
 - Update checkout step to use pull request head SHA
-  ([`420b37a`](https://github.com/SiegeSailor/SmartyNotebooks/commit/420b37a66de9e554b44978b4f85727d6d5f4913f))
+  ([`420b37a`](https://github.com/SiegeSailor/Smarty-Notebook-Collection/commit/420b37a66de9e554b44978b4f85727d6d5f4913f))
 
 - Update commitlint version to 1.13.3
-  ([`d204a6c`](https://github.com/SiegeSailor/SmartyNotebooks/commit/d204a6cc48945d244d35b907fb92365a23a5344c))
+  ([`d204a6c`](https://github.com/SiegeSailor/Smarty-Notebook-Collection/commit/d204a6cc48945d244d35b907fb92365a23a5344c))
 
 - Update commitlint version to 1.13.3 in continuous delivery workflow
-  ([`632a9f6`](https://github.com/SiegeSailor/SmartyNotebooks/commit/632a9f68b637ab8c01698ee3b84160676b895a5e))
+  ([`632a9f6`](https://github.com/SiegeSailor/Smarty-Notebook-Collection/commit/632a9f68b637ab8c01698ee3b84160676b895a5e))
 
 - Update commitlint version to 1.13.3 in pre-commit configuration
-  ([`7dc8a07`](https://github.com/SiegeSailor/SmartyNotebooks/commit/7dc8a074fe49abc384c56ba77588295e30f5a97b))
+  ([`7dc8a07`](https://github.com/SiegeSailor/Smarty-Notebook-Collection/commit/7dc8a074fe49abc384c56ba77588295e30f5a97b))
 
 - Update commitlint version to v1.13.3
-  ([`a557f1a`](https://github.com/SiegeSailor/SmartyNotebooks/commit/a557f1a28e4b2e32c35bd09c2856905298930f9e))
+  ([`a557f1a`](https://github.com/SiegeSailor/Smarty-Notebook-Collection/commit/a557f1a28e4b2e32c35bd09c2856905298930f9e))
 
 - Update fetch-depth for checkout and install commitlint via pip
   ([`cfa4376`](https://github.com/SiegeSailor/Smarty-Notebook/commit/cfa4376ac947c2849dfc32db7c99ae33925ae992))
@@ -69,10 +69,10 @@
 
 - Use Poetry for commitlint
   ([`8449315`](https://github.com/SiegeSailor/Smarty-Notebook/commit/84493156152613cac48a98c07873075ff3130b8f))
-  SmartyNotebooks
+  Smarty-Notebook-Collection
 - Use semantic versions for actions
   ([`6b2a788`](https://github.com/SiegeSailor/Smarty-Notebook/commit/6b2a788c704824b916dd4d3e581f4d1676eacb99))
-  SmartyNotebooks
+  Smarty-Notebook-Collection
 
 ### Documentation
 
@@ -93,11 +93,11 @@
 
 - Update pre-commit installation command in CONTRIBUTING.md
   ([`e516efa`](https://github.com/SiegeSailor/Smarty-Notebook/commit/e516efa369de13402f139c485a9c4e70a585c49e))
-  SmartyNotebooks
+  Smarty-Notebook-Collection
 
 ## v1.1.0-release.2 (2025-11-09)
 
-SmartyNotebooks
+Smarty-Notebook-Collection
 
 ### Bug Fixes
 
@@ -110,7 +110,7 @@ SmartyNotebooks
 - Update pull request event types and conditioSmartyNotebooks
   ([`5e33d40`](https://github.com/SiegeSailor/Smarty-Notebook/commit/5e33d408c4b2a53adeb386063a2d07017c753b3b))
 
-SmartyNotebooks
+Smarty-Notebook-Collection
 
 ## v1.1.0-release.1 (2025-11-09)
 
@@ -122,13 +122,13 @@ SmartyNotebooks
 ### FeaturesSmartyNotebooks
 
 - Add commitlint for linting commit messages
-  ([`3f83a3d`](https://github.com/SiegeSailor/SmartyNotebooks/commit/3f83a3d5930c7ae17cfa1cb9cf3e01965510e191))
+  ([`3f83a3d`](https://github.com/SiegeSailor/Smarty-Notebook-Collection/commit/3f83a3d5930c7ae17cfa1cb9cf3e01965510e191))
 
-## v1.0.0-release.8 (2025-11-09)SmartyNotebooks
+## v1.0.0-release.8 (2025-11-09)Smarty-Notebook-Collection
 
 ### Bug Fixes
 
-SmartyNotebooks
+Smarty-Notebook-Collection
 
 - Add PR if condition and remove paths-ignore
   ([`9d6c3b2`](https://github.com/SiegeSailor/Smarty-Notebook/commit/9d6c3b2a75c53a6454e007c46ea869c73a5c03f3))
@@ -144,7 +144,7 @@ SmartyNotebooks
 
 - Update token format in releaserc.tom
   ([`35c77cd`](https://github.com/SiegeSailor/Smarty-Notebook/commit/35c77cd014f9ee599c9dfce0c6058acf5a44965a))
-  SmartyNotebooks
+  Smarty-Notebook-Collection
 
 ### Chores
 
@@ -167,13 +167,13 @@ SmartyNotebooks
 
 - Use GitHub App to authenticate PSR
   ([`7cee682`](https://github.com/SiegeSailor/Smarty-Notebook/commit/7cee6826b871b9bf6d51bd6356f8d173c91167c5))
-  SmartyNotebooks
+  Smarty-Notebook-Collection
 - Use GitHub App token for all release steps
   ([`2bc3afd`](https://github.com/SiegeSailor/Smarty-Notebook/commit/2bc3afd45a250dc19ad009cac8797e3146d7da27))
-  SmartyNotebooks
+  Smarty-Notebook-Collection
 - Use PERSONAL_ACCESS_TOKEN_ADMIN for remote.token
   ([`a66ec31`](https://github.com/SiegeSailor/Smarty-Notebook/commit/a66ec315ece0da75a64bd23da12c29605d497beb))
-  SmartyNotebooks
+  Smarty-Notebook-Collection
 
 ### Documentation
 
@@ -217,7 +217,7 @@ SmartyNotebooks
 ### DocumentationSmartyNotebooks
 
 - Update dependencies format
-  ([`7451f61`](https://github.com/SiegeSailor/SmartyNotebooks/commit/7451f610077cdbcdf7e5796d1fa76765460b4d24))
+  ([`7451f61`](https://github.com/SiegeSailor/Smarty-Notebook-Collection/commit/7451f610077cdbcdf7e5796d1fa76765460b4d24))
 
 ## v1.0.0-release.7 (2025-11-05)
 
@@ -256,7 +256,7 @@ SmartyNotebooks
 
 - Add support section with resources for assistance
   ([`f003ceb`](https://github.com/SiegeSailor/Smarty-Notebook/commit/f003cebed1d0f1b8103b983a8dbacc1977e63fe1))
-  SmartyNotebooks
+  Smarty-Notebook-Collection
 - Add tip for restarting VS Code to see installed packages
   ([`2bc1609`](https://github.com/SiegeSailor/Smarty-Notebook/commit/2bc16094b0222ca6b388c9aab10ad03e320f1870))
 
@@ -264,7 +264,7 @@ SmartyNotebooks
   ([`60f3c69`](https://github.com/SiegeSailor/Smarty-Notebook/commit/60f3c69591b8fc71ad6b3369add44e0df4edf367))
 
 - Update contributing guide
-  ([`e28bbb6`](https://github.com/SiegeSailor/SmartyNotebooks/commit/e28bbb6dee0767af488c8d1fff468557ee83cc15))
+  ([`e28bbb6`](https://github.com/SiegeSailor/Smarty-Notebook-Collection/commit/e28bbb6dee0767af488c8d1fff468557ee83cc15))
 
 - Update contributing guide
   ([`762a8d5`](https://github.com/SiegeSailor/Smarty-Notebook/commit/762a8d59c351486674e05905e0cd4859257ab413))

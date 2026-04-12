@@ -1,6 +1,6 @@
-# SmartyNotebooks
+# Smarty-Notebook-Collection
 
-[![Continuous Delivery](https://github.com/SiegeSailor/SmartyNotebooks/actions/workflows/continuous-delivery.yml/badge.svg)](https://github.com/SiegeSailor/SmartyNotebooks/actions/workflows/continuous-delivery.yml)
+[![Continuous Delivery](https://github.com/SiegeSailor/Smarty-Notebook-Collection/actions/workflows/continuous-delivery.yml/badge.svg)](https://github.com/SiegeSailor/Smarty-Notebook-Collection/actions/workflows/continuous-delivery.yml)
 
 This repository contains Jupyter Notebooks that use the [Smarty Cloud API](https://www.smarty.com/docs/cloud) for various common tasks. Each notebook is designed to be self-contained and easy to use:
 
@@ -10,7 +10,7 @@ This repository contains Jupyter Notebooks that use the [Smarty Cloud API](https
 
 ## Using the Notebooks
 
-You can access the notebooks directly on [GitHub.dev](https://github.dev/SiegeSailor/SmartyNotebooks), or other means of accessing Jupyter Notebooks, such as such as [GitHub Codespaces](https://github.blog/changelog/2022-11-09-using-codespaces-with-jupyterlab-public-beta/) or [Google Colab](https://colab.google/). You can also clone this project to your local machine and follow the [Setting Up a Local Environment](#setting-up-a-local-environment) section below to run the notebooks locally.
+You can access the notebooks directly on [GitHub.dev](https://github.dev/SiegeSailor/Smarty-Notebook-Collection), or other means of accessing Jupyter Notebooks, such as such as [GitHub Codespaces](https://github.blog/changelog/2022-11-09-using-codespaces-with-jupyterlab-public-beta/) or [Google Colab](https://colab.google/). You can also clone this project to your local machine and follow the [Setting Up a Local Environment](#setting-up-a-local-environment) section below to run the notebooks locally.
 
 ### Setting Up a Local Environment
 
@@ -43,15 +43,15 @@ Create a virtual environment for the project:
 
 ```shell
 pyenv install 3.11.13
-pyenv virtualenv 3.11.13 smartynotebooks
-pyenv activate smartynotebooks
+pyenv virtualenv 3.11.13 smarty-notebook-collection
+pyenv activate smarty-notebook-collection
 ```
 
 > [!Tip]
-> You can use `pyenv local smartynotebooks` to set the virtual environment for the current directory.
+> You can use `pyenv local smarty-notebook-collection` to set the virtual environment for the current directory.
 
 > [!Tip]
-> You can use `pyenv uninstall smartynotebooks` to remove the virtual environment.
+> You can use `pyenv uninstall smarty-notebook-collection` to remove the virtual environment.
 
 #### Installing Dependencies
 
@@ -66,7 +66,7 @@ poetry install --without dev
 `pyenv version` should show output similar to the following:
 
 ```shell
-smartynotebooks (set by PYENV_VERSION environment variable)
+smarty-notebook-collection (set by PYENV_VERSION environment variable)
 ```
 
 `poetry env info` should show output similar to the following:
@@ -75,8 +75,8 @@ smartynotebooks (set by PYENV_VERSION environment variable)
 Virtualenv
 Python:         3.11.13
 Implementation: CPython
-Path:           /Users/user/.pyenv/versions/3.11.13/envs/smartynotebooks
-Executable:     /Users/user/.pyenv/versions/3.11.13/envs/smartynotebooks/bin/python
+Path:           /Users/user/.pyenv/versions/3.11.13/envs/smarty-notebook-collection
+Executable:     /Users/user/.pyenv/versions/3.11.13/envs/smarty-notebook-collection/bin/python
 Valid:          True
 
 Base

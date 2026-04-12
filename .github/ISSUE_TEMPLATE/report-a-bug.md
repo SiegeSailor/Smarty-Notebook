@@ -13,7 +13,7 @@ A clear and concise description of what the bug is.
 ### Environment
 
 - [ ] [GitHub Codespaces](https://github.blog/changelog/2022-11-09-using-codespaces-with-jupyterlab-public-beta/)
-- [ ] [GitHub.dev](https://github.dev/SiegeSailor/SmartyNotebooks)
+- [ ] [GitHub.dev](https://github.dev/SiegeSailor/Smarty-Notebook-Collection)
 - [ ] [Google Colab](https://colab.google/)
 - Local setup
   - Operating system:

@@ -1,6 +1,6 @@
 # Governance
 
-The SmartyNotebooks project is governed by [SiegeSailor](https://github.com/SiegeSailor) who is responsible for high-level decisions, including feature prioritization, release planning, and community management. This document outlines the governance structure and decision-making process.
+The Smarty-Notebook-Collection project is governed by [SiegeSailor](https://github.com/SiegeSailor) who is responsible for high-level decisions, including feature prioritization, release planning, and community management. This document outlines the governance structure and decision-making process.
 
 ## Maintainer
 
