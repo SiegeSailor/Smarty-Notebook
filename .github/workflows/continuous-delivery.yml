@@ -44,7 +44,7 @@ jobs:
       - name: Setup | Install Commitlint
         if: github.event_name == 'pull_request'
         run: |
-          pip install commitlint
+          pip install commitlint==1.13.3
 
       - name: Evaluate | Validate PR Title
         if: github.event_name == 'pull_request'
@@ -55,6 +55,7 @@ jobs:
         uses: opensource-nepal/commitlint@v1
 
   release:
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     needs: linting
     concurrency:
