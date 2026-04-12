@@ -2,6 +2,117 @@
 
 <!-- version list -->
 
+## v1.1.0-release.2 (2025-11-09)
+
+### Bug Fixes
+
+- Add condition to validate PR title step
+  ([`7dde655`](https://github.com/SiegeSailor/Smarty-Notebook/commit/7dde655d6ae5af136278b174efe572fa546076fb))
+
+- Correct typo in security policy document
+  ([`271fa11`](https://github.com/SiegeSailor/Smarty-Notebook/commit/271fa115fb45d2fbce71647e26c1dc387e45c3e4))
+
+- Update pull request event types and condition
+  ([`5e33d40`](https://github.com/SiegeSailor/Smarty-Notebook/commit/5e33d408c4b2a53adeb386063a2d07017c753b3b))
+
+
+## v1.1.0-release.1 (2025-11-09)
+
+### Bug Fixes
+
+- Update links and formatting in documentation
+  ([`b175ac6`](https://github.com/SiegeSailor/Smarty-Notebook/commit/b175ac6114a3c6c0c669c068c0454b0267f1c6a9))
+
+### Features
+
+- Add commitlint for linting commit messages
+  ([`3f83a3d`](https://github.com/SiegeSailor/Smarty-Notebook/commit/3f83a3d5930c7ae17cfa1cb9cf3e01965510e191))
+
+
+## v1.0.0-release.8 (2025-11-09)
+
+### Bug Fixes
+
+- Add PR if condition and remove paths-ignore
+  ([`9d6c3b2`](https://github.com/SiegeSailor/Smarty-Notebook/commit/9d6c3b2a75c53a6454e007c46ea869c73a5c03f3))
+
+- Format release commit message format
+  ([`dab335e`](https://github.com/SiegeSailor/Smarty-Notebook/commit/dab335e787d157f203395842bf2e2f70c04e9623))
+
+- Reorder linting steps and update semantic release identifiers
+  ([`e5aaeea`](https://github.com/SiegeSailor/Smarty-Notebook/commit/e5aaeeac16fde4a5f1ba13b158f973e5e3f94208))
+
+- Set ignore_token_for_push to true in releaserc.toml
+  ([`2a03d3c`](https://github.com/SiegeSailor/Smarty-Notebook/commit/2a03d3cd82c90fd5c6361c9c832275713a201f1a))
+
+- Update token format in releaserc.tom
+  ([`35c77cd`](https://github.com/SiegeSailor/Smarty-Notebook/commit/35c77cd014f9ee599c9dfce0c6058acf5a44965a))
+
+### Chores
+
+- Test pre-commit with semantic-release
+  ([`3e36abc`](https://github.com/SiegeSailor/Smarty-Notebook/commit/3e36abc8549ab85b95fee51e47c2739f9500ca37))
+
+### Continuous Integration
+
+- Add commitizen for PR title and use PAT for semantic-release
+  ([`7cdaf1c`](https://github.com/SiegeSailor/Smarty-Notebook/commit/7cdaf1c0adadab328c05e603f7f5c767ed5a9968))
+
+- Decrease verbosity level for semantic release action
+  ([`7fd3c83`](https://github.com/SiegeSailor/Smarty-Notebook/commit/7fd3c837c88ef59fa34a9a4758e710ddf79dab13))
+
+- Increase verbosity level for semantic release action
+  ([`a18962f`](https://github.com/SiegeSailor/Smarty-Notebook/commit/a18962f0bed21a66a44444b5a5584af71a33f4c4))
+
+- Name a person for semantic-release
+  ([`6ed3376`](https://github.com/SiegeSailor/Smarty-Notebook/commit/6ed3376b26e8ad93151a87129e1fac5c87b917a1))
+
+- Use GitHub App to authenticate PSR
+  ([`7cee682`](https://github.com/SiegeSailor/Smarty-Notebook/commit/7cee6826b871b9bf6d51bd6356f8d173c91167c5))
+
+- Use GitHub App token for all release steps
+  ([`2bc3afd`](https://github.com/SiegeSailor/Smarty-Notebook/commit/2bc3afd45a250dc19ad009cac8797e3146d7da27))
+
+- Use PERSONAL_ACCESS_TOKEN_ADMIN for remote.token
+  ([`a66ec31`](https://github.com/SiegeSailor/Smarty-Notebook/commit/a66ec315ece0da75a64bd23da12c29605d497beb))
+
+### Documentation
+
+- Add Apache License 2.0
+  ([`f29cf3f`](https://github.com/SiegeSailor/Smarty-Notebook/commit/f29cf3fdafccce24a1ec478c5f19a1f1844d69c1))
+
+- Add FUNDING.yml with GitHub sponsor
+  ([`06a3ed6`](https://github.com/SiegeSailor/Smarty-Notebook/commit/06a3ed66e969df2e35899cc9225aaff4c16981c8))
+
+- Update CONTRIBUTING.md
+  ([`fff15be`](https://github.com/SiegeSailor/Smarty-Notebook/commit/fff15be51e5f69043bd3243d3a0e617e2be0b213))
+
+- Update dependencies format
+  ([`7451f61`](https://github.com/SiegeSailor/Smarty-Notebook/commit/7451f610077cdbcdf7e5796d1fa76765460b4d24))
+
+- Update links in README.md
+  ([`f290c22`](https://github.com/SiegeSailor/Smarty-Notebook/commit/f290c2283b6c2aa32eeaa09b19de0c3474530c63))
+
+- Update local environment instruction
+  ([`5cd8336`](https://github.com/SiegeSailor/Smarty-Notebook/commit/5cd83366df5cbb71467d5feb5f1a7ec89bd399d6))
+
+- Update SECURITY.md
+  ([`0f96829`](https://github.com/SiegeSailor/Smarty-Notebook/commit/0f9682918f009e4e7ab84c71c26804d1cce9069b))
+
+### Features
+
+- Add pre-commit-config.yaml
+  ([`0f01947`](https://github.com/SiegeSailor/Smarty-Notebook/commit/0f01947f271c4252fb40db6ec65d6ae45670652e))
+
+- Add the lint dependency group
+  ([`21b8534`](https://github.com/SiegeSailor/Smarty-Notebook/commit/21b8534f58838b7ba8851adcb0066c13cace3a14))
+
+- Remove semantic-release pre-commit and add commitlint back
+  ([`96d826f`](https://github.com/SiegeSailor/Smarty-Notebook/commit/96d826f7091a7b7d278112252fdbb383f6595e70))
+
+- Update pre-commit configuration
+  ([`1884b2e`](https://github.com/SiegeSailor/Smarty-Notebook/commit/1884b2efc3208066887aa583e63d9aee13aa2d04))
+
 ## v1.0.0 (2025-11-05)
 
 ### Documentation

@@ -5,22 +5,21 @@ on:
     branches:
       - main
       - release
-    paths-ignore:
-      - "./.github/CODE_OF_CONDUCT.md"
-      - "./.github/CONTRIBUTING.md"
-      - "./.github/GOVERNANCE.md"
-      - "./.github/ISSUE_TEMPLATE/*"
-      - "./.github/pull_request_template.md"
-      - "./.github/SECURITY.md"
-      - "./.github/SUPPORT.md"
-      - "./images/*"
-      - "./README.md"
+  pull_request:
+    branches:
+      - main
+      - release
+    types:
+      - edited
+      - opened
+      - reopened
+      - synchronize
 
 permissions:
   contents: read
 
 jobs:
-  commitlint:
+  linting:
     runs-on: ubuntu-latest
 
     permissions:
@@ -28,25 +27,59 @@ jobs:
       pull-requests: read
 
     steps:
-      - name: Action | Run Conventional Commitlint
-        uses: opensource-nepal/commitlint@v1
+      - name: Action | Checkout Repository on Pull Request
+        uses: actions/checkout@v5.0.0
+        if: github.event_name == 'pull_request'
+        with:
+          fetch-depth: 1
+          ref: ${{ github.event.pull_request.head.sha }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Action | Set Up Python
+        uses: actions/setup-python@v6.0.0
+        if: github.event_name == 'pull_request'
+        with:
+          python-version: 3.11.13
+
+      - name: Setup | Install Commitlint
+        if: github.event_name == 'pull_request'
+        run: |
+          pip install commitlint==1.13.3
+
+      - name: Evaluate | Validate PR Title
+        if: github.event_name == 'pull_request'
+        run: |
+          commitlint "${{ github.event.pull_request.title }}"
+
+      - name: Action | Validate Commit Messages
+        uses: opensource-nepal/commitlint@v1.13.3
 
   release:
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
+    needs: linting
     concurrency:
       group: ${{ github.workflow }}-${{ github.job }}-${{ github.ref_name }}
       cancel-in-progress: false
 
     permissions:
       contents: write
+      pull-requests: write
 
     steps:
-      - name: Setup | Checkout Repository on Release Branch
-        uses: actions/checkout@v4
+      - name: Action | Create GitHub App Token
+        uses: actions/create-github-app-token@v2.1.4
+        id: action-create-github-app-token
+        with:
+          app-id: ${{ vars.APP_ID_GITHUB_APP_BYPASS_RULESETS }}
+          private-key: ${{ secrets.PRIVATE_KEY_GITHUB_APP_BYPASS_RULESETS }}
+
+      - name: Action | Checkout Repository on Release Branch
+        uses: actions/checkout@v5.0.0
         with:
           fetch-depth: 0
           ref: ${{ github.ref_name }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ steps.action-create-github-app-token.outputs.token }}
 
       - name: Setup | Force Release Branch to be at Workflow SHA
         run: |
@@ -84,15 +117,15 @@ jobs:
 
           printf '%s\n' "Verified upstream branch has not changed, continuing with release..."
 
-      - name: Bundle | Prepare Artifacts
+      - name: Build | Compress Artifacts
         run: |
           zip -r notebooks.zip ./notebooks/
 
       - name: Action | Create Semantic Version Release
-        id: release
+        id: python-semantic-release-release
         uses: python-semantic-release/python-semantic-release@v10.4.1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ steps.action-create-github-app-token.outputs.token }}
           git_committer_name: "github-actions"
           git_committer_email: "actions@users.noreply.github.com"
           config_file: "./releaserc.toml"
@@ -100,17 +133,17 @@ jobs:
 
       - name: Action | Publish to GitHub Release Assets
         uses: python-semantic-release/publish-action@v10.4.1
-        if: steps.release.outputs.released == 'true'
+        if: steps.python-semantic-release-release.outputs.released == 'true'
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          tag: ${{ steps.release.outputs.tag }}
+          github_token: ${{ steps.action-create-github-app-token.outputs.token }}
+          tag: ${{ steps.python-semantic-release-release.outputs.tag }}
 
       - name: Action | Upload Artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5.0.0
         with:
           name: notebooks
           path: "./notebooks/"
           if-no-files-found: error
 
     outputs:
-      released: ${{ steps.release.outputs.released || 'false' }}
+      released: ${{ steps.python-semantic-release-release.outputs.released || 'false' }}

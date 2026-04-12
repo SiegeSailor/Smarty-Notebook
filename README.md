@@ -1,8 +1,11 @@
 # Smarty Notebook
 
+[![Continuous Delivery](https://github.com/SiegeSailor/Smarty-Notebook/actions/workflows/continuous-delivery.yml/badge.svg)](https://github.com/SiegeSailor/Smarty-Notebook/actions/workflows/continuous-delivery.yml)
+
 This repository contains Jupyter Notebooks that use the [Smarty Cloud API](https://www.smarty.com/docs/cloud) for various common tasks. Each notebook is designed to be self-contained and easy to use:
 
 - [x] Fetch U.S. ZIP+4 Code by Address
+- [ ] Fetch U.S. Enriched Address by Address
 - [ ] Fetch International Postal Code by Address
 
 ## Using the Notebooks
@@ -17,6 +20,22 @@ Follow the steps below to set up your local environment for development.
 
 - [`pyenv`](https://github.com/pyenv/pyenv): 2.6.5
 - [`pyenv-virtualenv`](https://github.com/pyenv/pyenv-virtualenv): 1.2.4
+- [`poetry`](https://python-poetry.org/): 2.2.1
+
+> [!Tip]
+> You can add the following to your shell configuration file to automatically initialize and set up auto-completion:
+>
+> ```shell
+> # ===> PYENV
+> export PYENV_ROOT="$HOME/.pyenv"
+> [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+> eval "$(pyenv init - zsh)"
+> # ===> Poetry
+> fpath+=~/.zfunc
+> export PATH="$HOME/.local/bin:$PATH"
+> # ===> Auto Completion
+> autoload -Uz compinit && compinit
+> ```
 
 #### Setting Up a Virtual Environment
 
@@ -26,7 +45,6 @@ Create a virtual environment for the project:
 pyenv install 3.11.13
 pyenv virtualenv 3.11.13 smarty-notebook
 pyenv activate smarty-notebook
-pip install poetry==2.2.1
 ```
 
 > [!Tip]
@@ -40,7 +58,7 @@ pip install poetry==2.2.1
 To install the required dependencies, run the following command:
 
 ```shell
-poetry install
+poetry install --without dev
 ```
 
 #### Verifying the Installation
@@ -87,11 +105,11 @@ urllib3            2.5.0       HTTP library with thread-safe connection pooling,
 ```
 
 > [!Tip]
-> If you are using VS Code and you don't see the installed packages in the selected interpreter, you may need to restart VS Code. See [this issue](https://github.com/microsoft/vscode-python/issues/16232) for more details.
+> If you are using VS Code and you don't see the installed packages in the selected interpreter, you may need to restart VS Code. See [VSCode Python Issue#16232](https://github.com/microsoft/vscode-python/issues/16232) for more details.
 
 #### Supplying Smarty API Credentials
 
-To use the Smarty API, you need to provide your [key pairs](https://www.smarty.com/docs/cloud/authentication#keypairs). You can do this by creating a `.env` file with the following environment variables:
+To use the Smarty API, you need to provide your [Key Pairs](https://www.smarty.com/docs/cloud/authentication#keypairs). You can do this by creating a `.env` file with the following environment variables:
 
 ```shell
 SMARTY_AUTH_ID="<smarty_auth_id>"
