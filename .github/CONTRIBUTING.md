@@ -1,5 +1,7 @@
 # Contributing
 
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
+
 Thank you for investing your time in contributing to this project. If you are new to contributing to open source projects, the following resources may be helpful:
 
 - [Set up Git](https://docs.github.com/en/get-started/git-basics/set-up-git)

@@ -1,5 +1,7 @@
 # Smarty Notebook
 
+[![Continuous Delivery](https://github.com/SiegeSailor/Smarty-Notebook/actions/workflows/continuous-delivery.yml/badge.svg)](https://github.com/SiegeSailor/Smarty-Notebook/actions/workflows/continuous-delivery.yml)
+
 This repository contains Jupyter Notebooks that use the [Smarty Cloud API](https://www.smarty.com/docs/cloud) for various common tasks. Each notebook is designed to be self-contained and easy to use:
 
 - [x] Fetch U.S. ZIP+4 Code by Address
