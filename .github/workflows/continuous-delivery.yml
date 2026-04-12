@@ -52,7 +52,7 @@ jobs:
           commitlint "${{ github.event.pull_request.title }}"
 
       - name: Action | Validate Commit Messages
-        uses: opensource-nepal/commitlint@v1.13.3
+        uses: opensource-nepal/commitlint@v1
 
   release:
     runs-on: ubuntu-latest
