@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v3.0.0 (2026-04-12)
+
+### Features
+
+- Rename the project to Smarty-Notebook-Collection
+  ([`d36a774`](https://github.com/SiegeSailor/Smarty-Notebook-Collection/commit/d36a77442ab09b7232b0c3d843e0bceacb87c98d))
+
+
 ## v2.0.0 (2026-04-12)
 
 ### Bug Fixes
